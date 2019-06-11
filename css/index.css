@@ -1,0 +1,210 @@
+/*轮播图开始啦*/
+.lunbotu {
+	width: 100%;
+	height: 320px;
+	position: relative;
+}
+.arr-l , .arr-r {
+	width: 56px;
+	height: 64px;
+	line-height: 64px;
+	background-color: rgba(0,0,0,.5);
+	color: #fff;
+	text-align: center;
+	font-size: 25px;
+	position: absolute;
+	top: 50%;
+	margin-top: -32px;
+	cursor: pointer;
+}
+.lunbotu .arr-l {
+	left: 0;
+}
+.lunbotu .arr-r {
+	right: 0;
+}
+.arr-l:hover , .arr-r:hover {
+	background-color: rgba(255,18,104,.5);
+}
+.nav {
+	position: absolute;
+	bottom: 8px;
+	right: 32px;
+}
+.nav .dot {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	margin-left: 5px;
+	background-color: rgba(255, 255, 255, .3);
+}
+.lunbotu .nav .current {
+	background-color: #fff;
+}
+/*类别*/
+.category {
+	margin: 15px 0;
+	padding: 25px 0;
+	border: 1px solid #EBEBEB;
+}
+.category li {
+	width: 119px;
+	text-align: center;
+	float: left;
+}
+.category li:hover p {
+	color: #FF1268;
+}
+.category-name {
+	color: #111111;
+	font-size: 16px;
+	margin-top: 8px;
+}
+.category .ico {
+	display: block;
+	width: 48px;
+	height: 48px;
+	margin: 0 auto;
+	background: url(../img/TB1U9R8GY9YBuNjy0FgXXcxcXXa-146-1822.png) no-repeat;
+	background-size: 100% auto;
+}
+.category .ico-ych {
+	background-position: 0 0;
+}
+.category .ico-hjgj {
+	background-position: 0 -64px;
+}
+.category .ico-ty {
+	background-position: 0 -120px;
+}
+.category .ico-etqz {
+	background-position: 0 -180px;
+}
+.category .ico-zlxx {
+	background-position: 0 -240px;
+}
+.category .ico-yyh {
+	background-position: 0 -297px;
+}
+.category .ico-qyzt {
+	background-position: 0 -360px;
+}
+.category .ico-wdbl {
+	background-position: 0 -420px;
+}
+.category .ico-ecy {
+	background-position: 0 -480px;
+}
+.category .ico-lyzl {
+	background-position: 0 -540px;
+}
+/*内容*/
+.content {
+	height: 1000px;
+	/*background: pink;*/
+}
+.cont-in {
+	padding: 20px;
+	border: 1px solid #EBEBEB;
+	margin-bottom: 15px;
+}
+.content-hd {
+	height: 40px;
+	line-height: 40px;
+	margin-bottom: 15px;
+}
+.content-hd span {
+	font-size: 24px;
+}
+.content-hd a {
+	float: right;
+	font-size: 14px;
+	color: #9B9B9B;
+	margin-right: 23px;
+}
+.content-bd {
+	/*height: 360px;*/
+	/*background: skyblue;*/
+}
+.content-bd-l {
+	display: inline-block;
+	width: 270px;
+	height: 360px;
+	position: relative;
+}
+.content-bd-l img {
+	width: 270px;
+	height: 360px;
+}
+.content-bd-l-info {
+	width: 250px;
+	height: 84px;
+	padding: 17px 10px;
+	color: #fff;
+	background-color: rgba(0,0,0,.5);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	cursor: pointer;
+}
+.content-bd-l-info .title {
+	font-size: 16px;
+}
+.content-bd-l-info .details {
+	margin-top: 35px;
+	font-size: 20px;
+}
+.content-bd-l-info div:hover {
+	color: #FF1268;
+}
+.content-bd-r {
+	float: right;
+	width: 870px;
+	height: 360px;
+}
+.content-bd-r a{
+	display: inline-block;
+	width: 270px;
+	height: 160px;
+	margin-right: 16px;
+	margin-bottom: 40px;
+	overflow: hidden;
+}
+.content-bd-r .item-img {
+	display: inline-block;
+	width: 118px;
+	height: 158px;
+}
+.content-bd-r .item-info {
+	float: right;
+	width: 138px;
+	height: 100%;
+	position: relative;
+}
+.content-bd-r .item-info div:hover {
+	color: #FF1268;
+}
+.content-bd-r .item-info .title {
+	color: #4A4A4A;
+	font-size: 14px;
+	line-height: 20px;
+}
+.item-info .venue ,.item-info .showtime {
+	font-size: 12px;
+	color: #9B9B9B;
+}
+.content-bd-r .item-info .venue {
+	margin-top: 14px;
+}
+.content-bd-r .item-info .showtime {
+	margin-top: 7px;
+}
+.content-bd-r .item-info .price {
+	font-size: 16px;
+	color: #FF1268;
+	width: 138px;
+	position: absolute;
+	left: 15px;
+	bottom: 0;
+}

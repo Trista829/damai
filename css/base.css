@@ -1,0 +1,365 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+.clearfix:before , .clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	*zoom: 1;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.inner {
+	width: 1200px;
+	margin: 0 auto;
+}
+/*箭头*/
+.jiantou {
+	display: inline-block;
+	vertical-align: middle;
+	width: 0;
+	height: 0;
+	border: 5px solid transparent;
+	border-bottom-color: #fff;
+	position: absolute;
+	top: -10px;
+	left: 50%;
+	margin-left: -5px;
+}
+/*头部开始啦*/
+.header {
+	height: 72px;
+	line-height: 72px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	/*border-bottom: 1px solid rgba(0,0,0,0.3);*/
+}
+.header-l {
+	height: 72px;
+}
+.header-l .logo {
+	width: 92px;
+	text-indent: -99999px;
+}
+.logo img {
+    width: 92px;
+    height: auto;
+    margin-top: 15px;
+    float: left;
+}
+.position {
+	width: 63px;
+	height: 72px;
+	margin-left: 54px;
+	cursor: pointer;
+	position: relative;
+}
+.position img {
+	vertical-align: middle;
+	display: inline-block;
+}
+.position img:first-child {
+	width: 12px;
+}
+.position .arr {
+	width: 9px;
+}
+.position:hover .city {
+	display: block;
+}
+/*城市*/
+.city {
+	display: none;
+	width: 520px;
+	padding: 21px;
+	z-index: 9999;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	position: absolute;
+	top: 66px;
+	left: -115px;
+	font-size: 16px;
+	line-height: 40px;
+}
+.city .jiantou {
+	margin-left: -140px;
+}
+.city-list {
+	width: 422px;
+	display: inline-block;
+}
+.now-city .city-name {
+	color: #FF1268;
+	background-color: #fff4f8;
+	padding: 0 10px;
+}
+.city-title {
+	color: #111;
+	margin-right: 15px;
+}
+.city-name {
+	margin-left: 5px;
+}
+.city .city-name:hover {
+	color: #FF1268;
+}
+.other-city {
+	margin-top: 10px;
+	padding-top: 10px;
+	border-top: 1px solid #EEE;
+}
+.index {
+	width: 100px;
+	height: 72px;
+	margin-left: 40px;
+}
+.index li {
+	float: left;
+	width: 32px;
+	margin-right: 18px;
+	cursor: pointer;
+}
+.index li:first-child , .index li:hover {
+	color: #FF1268;
+}
+.header-search {
+	margin-left: 155px;
+	position: relative;
+}
+.header-search img {
+	width: 17px;
+    position: absolute;
+    left: 22px;
+    top: 28px;
+}
+.header-search input {
+	width: 253px;
+	height: 44px;
+	border-bottom-left-radius: 44px;
+	border-top-left-radius: 44px;
+	padding-left: 54px;
+	font-size: 16px;
+	outline: none;
+	border: 1px solid #f8f8f8;	
+	background-color: #f8f8f8;
+}
+.header-search .search-btn {
+	display: inline-block;
+	width: 82px;
+	height: 44px;
+	line-height: 44px;
+	color: #fff;
+	text-align: center;
+	background-color: #FF1268;
+	border-bottom-right-radius: 44px;
+	border-top-right-radius: 44px;
+	cursor: pointer;
+}
+.header-r li {
+	float: left;
+	margin-left: 20px;
+	cursor: pointer;
+}
+.header-r li:hover {
+	color: #FF1268;
+}
+.header-r .login {
+	position: relative;
+}
+.header-r img {
+	width: 26px;
+	display: inline-block;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+.header-r .login:hover .login-per {
+	display: block;
+}
+/*登录框*/
+.login-per {
+	display: none;
+	width: 133px;
+	background: #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	z-index: 9999;
+	position: absolute;
+	top: 66px;
+	left: -25px;
+	text-align: center;
+}
+.login-per dd {
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #F2F2F2;
+	color: #111111;
+}
+.login-per dd:hover {
+	background-color: #FFF4F8;
+	color: #FF1268;
+}
+/*侧边栏*/
+.sidebar {
+	width: 80px;
+	border: 1px solid #EBEBEB;
+	background-color: #fff;
+	position: fixed;
+	right: 10px;
+	bottom: 20%;
+}
+.sidebar li {
+	width: 100%;
+	height: 60px;
+	padding-top: 10px;
+	font-size: 12px;
+	color: #111;
+	text-align: center;
+	border-bottom: 1px solid #EBEBEB;
+}
+.sidebar li:last-child {
+	border: 0;
+}
+.sidebar a {
+	display: block;
+	width: 100%;
+	height: 71px;
+	color: #111;
+}
+.sidebar a:hover {
+	color: #FF1268;
+}
+.sidebar a div {
+	width: 32px;
+	height: 29px;
+	background: url(../img/TB1u1U9xmzqK1RjSZFHXXb3CpXa-64-180.png) no-repeat;
+	background-size: 100%;
+	margin: 0 auto 4px;
+}
+.sidebar .kefu {
+	background-position: 3px -30px;
+}
+.sidebar .downapp {
+	background-position: 0 4px;
+}
+.sidebar .totop {
+	background-position: 4px -65px;
+}
+.sidebar .side-app {
+	position: relative;
+}
+.sidebar .side-app .app {
+	display: none;
+	width: 72px;
+	height: 72px;
+	padding: 5px;
+	background-color: #fff;
+	position: absolute;
+	top: 0;
+	right: 88px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+.sidebar .side-app .app .jiantou {
+	transform: rotate(90deg);
+	position: absolute;
+    top: 33px;
+    left: 107%;
+}
+.sidebar .side-app .app-er {
+	width: 72px;
+	height: 72px;
+	background: url(../img/erweima.jpg) no-repeat;
+	background-size: contain;
+}
+.sidebar .side-app:hover .app {
+	display: block;
+}
+/*尾部开始了*/
+.footer {
+	background-color: #f8f8f8;
+	height: 337px;
+}
+.footer .footer-links {
+	height: 30px;
+	line-height: 30px;
+	padding: 30px 0;
+	font-size: 13px;
+	text-align: center;
+}
+.footer-links ul {
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+.footer-links li {
+	float: left;
+	margin: 0 10px;
+}
+.footer-links li:hover a {
+	color: #FF1268;
+	text-decoration: underline;
+}
+.footer-links li a {
+	color: #111111;
+}
+.footer-links .spacer {
+	width: 1px;
+	height: 10px;
+	background-color: #111;
+}
+.foooter-ft {
+	font-size: 14px;
+}
+.footer-logo img {
+	width: 167px;
+	height: 60px;
+	margin-top: 15px;
+}
+.footer-erweima {
+	width: 87px;
+	margin-left: 40px;
+	text-align: center;
+}
+.footer-erweima img {
+	width: 87px;
+	height: 87px;
+	margin-bottom: 10px;
+}
+.footer-ft-r {
+	margin-left: 100px;
+}
+.footer .footer-ft-r .ft-kf {
+	display: block;
+	width: 98px;
+	height: 27px;
+	line-height: 27px;
+	text-align: center;
+	background-color: #FF1268;
+	border-radius: 27px;
+	color: #fff;
+	margin-bottom: 10px;
+}
+.footer-ft-r p {
+	line-height: 20px;
+	font-size: 13px;
+	color: #111111;
+}
+.footer .footer-ft-r a {
+	color: #111;
+} 
+.footer .footer-ft-r a:hover {
+	color: #FF1268;
+} 
